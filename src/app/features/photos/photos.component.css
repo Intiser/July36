@@ -1,0 +1,79 @@
+.photos-header {
+  @apply relative py-16 bg-neutral-900 text-white;
+}
+
+.photos-filter {
+  @apply sticky top-16 z-30 py-6 bg-white dark:bg-neutral-800;
+  @apply border-b border-neutral-200 dark:border-neutral-700;
+  @apply backdrop-blur-sm bg-white/90 dark:bg-neutral-800/90;
+}
+
+.photos-filter-container {
+  @apply flex flex-wrap justify-center gap-3;
+}
+
+.photos-filter-button {
+  @apply px-4 py-2 rounded-full text-sm md:text-base font-medium;
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500;
+  @apply border-2 border-neutral-900 dark:border-white;
+}
+
+.photos-filter-button-active {
+  @apply bg-primary-600 text-white border-primary-600;
+  @apply shadow-[2px_2px_0px_0px_theme(colors.primary.700)];
+}
+
+.photos-filter-button-inactive {
+  @apply bg-white dark:bg-neutral-700 text-neutral-800 dark:text-white;
+  @apply hover:bg-neutral-100 dark:hover:bg-neutral-600;
+  @apply shadow-[2px_2px_0px_0px_theme(colors.neutral.900)] dark:shadow-[2px_2px_0px_0px_theme(colors.white)];
+}
+
+.photos-grid {
+  @apply container mx-auto py-16 px-6 md:px-12;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.photo-card {
+  @apply bg-white dark:bg-neutral-800 rounded-lg overflow-hidden;
+  @apply cursor-pointer transition-all duration-300;
+  @apply border-2 border-neutral-900 dark:border-white;
+  @apply shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+  @apply hover:translate-x-[-2px] hover:translate-y-[-2px];
+  @apply hover:shadow-[6px_6px_0px_0px_theme(colors.neutral.900)] dark:hover:shadow-[6px_6px_0px_0px_theme(colors.white)];
+}
+
+.photo-image {
+  @apply relative aspect-[4/3] overflow-hidden;
+}
+
+.photo-image img {
+  @apply w-full h-full object-cover;
+  @apply transition-transform duration-500 ease-out;
+  @apply hover:scale-105;
+}
+
+.photo-content {
+  @apply p-6 bg-white dark:bg-neutral-800;
+}
+
+.photo-title {
+  @apply text-lg font-bold mb-2 text-neutral-900 dark:text-white;
+  @apply transition-colors duration-300;
+  @apply hover:text-primary-600 dark:hover:text-primary-400;
+}
+
+.photo-meta {
+  @apply flex flex-wrap items-center gap-4 mb-3;
+  @apply text-neutral-600 dark:text-neutral-400 text-sm;
+}
+
+.photo-meta-item {
+  @apply flex items-center gap-2;
+}
+
+.photo-description {
+  @apply text-neutral-700 dark:text-neutral-300 text-sm;
+  @apply line-clamp-3;
+}

@@ -1,0 +1,76 @@
+<footer class="bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800">
+  <div class="container mx-auto px-6 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <!-- Logo and Mission -->
+      <div>
+        <h3 class="text-2xl font-display font-bold mb-4 dark:text-white">
+          <span class="text-primary-500">36</span> July
+        </h3>
+        <p class="text-neutral-600 dark:text-neutral-400 mb-6">
+          <span *ngIf="currentLanguage === 'en'">
+            Preserving the history and art of the July-August 2024 Bangladesh student protests.
+          </span>
+          <span *ngIf="currentLanguage === 'bn'" class="bengali">
+            জুলাই-আগস্ট ২০২৪ বাংলাদেশ ছাত্র আন্দোলনের ইতিহাস এবং শিল্প সংরক্ষণ।
+          </span>
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-bold mb-4 dark:text-white">
+          <span *ngIf="currentLanguage === 'en'">Quick Links</span>
+          <span *ngIf="currentLanguage === 'bn'" class="bengali">দ্রুত লিঙ্ক</span>
+        </h4>
+        <ul class="space-y-3">
+          <li>
+            <a routerLink="/timeline" class="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <span *ngIf="currentLanguage === 'en'">Timeline</span>
+              <span *ngIf="currentLanguage === 'bn'" class="bengali">টাইমলাইন</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/people" class="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <span *ngIf="currentLanguage === 'en'">Key Figures</span>
+              <span *ngIf="currentLanguage === 'bn'" class="bengali">প্রধান ব্যক্তিত্ব</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/photos" class="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <span *ngIf="currentLanguage === 'en'">Photo Gallery</span>
+              <span *ngIf="currentLanguage === 'bn'" class="bengali">ছবি গ্যালারি</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- About -->
+      <div>
+        <h4 class="text-lg font-bold mb-4 dark:text-white">
+          <span *ngIf="currentLanguage === 'en'">About This Project</span>
+          <span *ngIf="currentLanguage === 'bn'" class="bengali">এই প্রকল্প সম্পর্কে</span>
+        </h4>
+        <p class="text-neutral-600 dark:text-neutral-400">
+          <span *ngIf="currentLanguage === 'en'">
+            This digital museum is dedicated to preserving the memory and documentation of the 2024 Bangladesh student protests.
+          </span>
+          <span *ngIf="currentLanguage === 'bn'" class="bengali">
+            এই ডিজিটাল জাদুঘর ২০২৪ সালের বাংলাদেশের ছাত্র আন্দোলনের স্মৃতি ও দলিল সংরক্ষণে নিবেদিত।
+          </span>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+      <p class="text-center text-sm text-neutral-600 dark:text-neutral-400">
+        <span *ngIf="currentLanguage === 'en'">
+          &copy; {{ currentYear }} 36 July. All rights reserved.
+        </span>
+        <span *ngIf="currentLanguage === 'bn'" class="bengali">
+          &copy; {{ currentYear }} ৩৬ জুলাই। সর্বস্বত্ব সংরক্ষিত।
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>

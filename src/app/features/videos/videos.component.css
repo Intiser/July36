@@ -1,0 +1,41 @@
+.videos-header {
+  @apply relative py-16 bg-neutral-900 text-white;
+}
+
+.videos-grid {
+  @apply py-16 bg-white dark:bg-neutral-900;
+}
+
+.video-card {
+  @apply bg-white dark:bg-neutral-800 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg;
+  @apply border-2 border-neutral-900 dark:border-white shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+}
+
+.video-thumbnail {
+  @apply relative aspect-video w-full overflow-hidden;
+}
+
+.video-thumbnail img {
+  @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-105;
+}
+
+.video-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center;
+  @apply opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.video-content {
+  @apply p-6;
+}
+
+.video-title {
+  @apply text-xl font-bold mb-2 text-neutral-900 dark:text-white;
+}
+
+.video-date {
+  @apply text-neutral-600 dark:text-neutral-400 text-sm mb-4;
+}
+
+.video-description {
+  @apply text-neutral-700 dark:text-neutral-300 line-clamp-3;
+}

@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "The Rise of Student Power",
+      "titleBn": "ছাত্র শক্তির উত্থান",
+      "author": "Dr. Rahman Khan",
+      "authorBn": "ড. রহমান খান",
+      "date": "August 15, 2024",
+      "dateBn": "আগস্ট ১৫, ২০২৪",
+      "excerpt": "An analysis of how the 2024 student movement transformed Bangladesh's political landscape",
+      "excerptBn": "২০২৪ সালের ছাত্র আন্দোলন কিভাবে বাংলাদেশের রাজনৈতিক পরিদৃশ্য পরিবর্তন করেছে তার একটি বিশ্লেষণ",
+      "image": "https://images.pexels.com/photos/6147369/pexels-photo-6147369.jpeg",
+      "type": "essay",
+      "category": "Academic Essay",
+      "categoryBn": "একাডেমিক প্রবন্ধ"
+    },
+    {
+      "id": 2,
+      "title": "Diary of a Protester",
+      "titleBn": "একজন আন্দোলনকারীর ডায়েরি",
+      "author": "Samia Ahmed",
+      "authorBn": "সামিয়া আহমেদ",
+      "date": "July 28, 2024",
+      "dateBn": "জুলাই ২৮, ২০২৪",
+      "excerpt": "Personal reflections from the front lines of the protests at Dhaka University",
+      "excerptBn": "ঢাকা বিশ্ববিদ্যালয়ে আন্দোলনের সামনের সারি থেকে ব্যক্তিগত প্রতিফলন",
+      "image": "https://images.pexels.com/photos/3847486/pexels-photo-3847486.jpeg",
+      "type": "personal",
+      "category": "Personal Account",
+      "categoryBn": "ব্যক্তিগত বিবরণ"
+    },
+    {
+      "id": 3,
+      "title": "Digital Resistance",
+      "titleBn": "ডিজিটাল প্রতিরোধ",
+      "author": "Zara Rahman",
+      "authorBn": "জারা রহমান",
+      "date": "August 5, 2024",
+      "dateBn": "আগস্ট ৫, ২০২৪",
+      "excerpt": "How social media and technology shaped the protest movement",
+      "excerptBn": "সোশ্যাল মিডিয়া এবং প্রযুক্তি কিভাবে আন্দোলনকে রূপ দিয়েছে",
+      "image": "https://images.pexels.com/photos/7862640/pexels-photo-7862640.jpeg",
+      "type": "article",
+      "category": "Analysis",
+      "categoryBn": "বিশ্লেষণ"
+    }
+  ]
+}

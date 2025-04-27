@@ -1,0 +1,46 @@
+.timeline-header {
+  @apply relative py-16 bg-neutral-900 text-white;
+}
+
+.timeline-section {
+  @apply relative py-20 bg-white dark:bg-neutral-900;
+}
+
+.timeline-line {
+  @apply absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-neutral-300 dark:bg-neutral-700 transform md:-translate-x-1/2;
+}
+
+.timeline-event {
+  @apply relative flex flex-col md:flex-row items-start gap-8 mb-16 last:mb-0;
+}
+
+.timeline-circle {
+  @apply absolute left-0 md:left-1/2 w-10 h-10 bg-primary-500 rounded-full border-4 border-white dark:border-neutral-900 z-10;
+  @apply flex items-center justify-center text-white font-bold transform -translate-y-1/2 md:-translate-x-1/2 md:translate-y-0;
+}
+
+.timeline-content {
+  @apply relative bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg transition-all duration-300;
+  @apply border-2 border-neutral-900 dark:border-white shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+}
+
+.timeline-date {
+  @apply inline-block px-4 py-1 mb-2 text-sm font-bold rounded-full;
+  @apply bg-neutral-200 dark:bg-neutral-700 text-neutral-800 dark:text-white;
+}
+
+.timeline-title {
+  @apply text-xl font-bold mb-2 text-neutral-900 dark:text-white;
+}
+
+.timeline-description {
+  @apply text-neutral-700 dark:text-neutral-300;
+}
+
+.timeline-image {
+  @apply mt-4 rounded-lg overflow-hidden;
+}
+
+.timeline-image img {
+  @apply w-full h-auto object-cover;
+}

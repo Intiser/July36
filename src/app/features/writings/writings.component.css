@@ -1,0 +1,46 @@
+.writings-header {
+  @apply relative py-16 bg-neutral-900 text-white;
+}
+
+.writings-grid {
+  @apply py-16 bg-white dark:bg-neutral-900;
+}
+
+.writing-card {
+  @apply bg-white dark:bg-neutral-800 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg;
+  @apply border-2 border-neutral-900 dark:border-white shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+}
+
+.writing-image {
+  @apply relative h-48 overflow-hidden bg-neutral-100 dark:bg-neutral-700;
+}
+
+.writing-image img {
+  @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-105;
+}
+
+.writing-content {
+  @apply p-6;
+}
+
+.writing-tag {
+  @apply inline-flex px-3 py-1 text-sm font-medium rounded-full;
+  @apply bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-200;
+}
+
+.writing-title {
+  @apply text-xl font-bold mb-2 text-neutral-900 dark:text-white;
+}
+
+.writing-meta {
+  @apply text-neutral-600 dark:text-neutral-400 text-sm mb-4;
+}
+
+.writing-excerpt {
+  @apply text-neutral-700 dark:text-neutral-300 mb-4 line-clamp-3;
+}
+
+.writing-link {
+  @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium;
+  @apply inline-flex items-center gap-2 transition-colors duration-300;
+}

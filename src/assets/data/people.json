@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Nadia Rahman",
+      "nameBn": "নাদিয়া রহমান",
+      "role": "Student Leader",
+      "roleBn": "ছাত্র নেতা",
+      "description": "Led the initial protests at Dhaka University and coordinated nationwide student response",
+      "descriptionBn": "ঢাকা বিশ্ববিদ্যালয়ে প্রাথমিক বিক্ষোভের নেতৃত্ব দেন এবং জাতীয় ছাত্র প্রতিক্রিয়া সমন্বয় করেন",
+      "image": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Kamal Hossain",
+      "nameBn": "কামাল হোসেন",
+      "role": "Student Organizer",
+      "roleBn": "ছাত্র সংগঠক",
+      "description": "Organized major demonstrations and coordinated with student groups across universities",
+      "descriptionBn": "বড় বিক্ষোভগুলি সংগঠিত করেন এবং বিশ্ববিদ্যালয়গুলির ছাত্র গোষ্ঠীর সাথে সমন্বয় করেন",
+      "image": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Faria Islam",
+      "nameBn": "ফারিয়া ইসলাম",
+      "role": "Student Activist",
+      "roleBn": "ছাত্র কর্মী",
+      "description": "Led social media campaigns and coordinated online protest activities",
+      "descriptionBn": "সোশ্যাল মিডিয়া প্রচারণার নেতৃত্ব দেন এবং অনলাইন প্রতিবাদ কার্যক্রম সমন্বয় করেন",
+      "image": "https://images.pexels.com/photos/3785424/pexels-photo-3785424.jpeg"
+    }
+  ]
+}

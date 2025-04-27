@@ -1,0 +1,51 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Photos",
+      "nameBn": "সব ছবি"
+    },
+    {
+      "id": "demonstrations",
+      "name": "Demonstrations",
+      "nameBn": "বিক্ষোভ"
+    },
+    {
+      "id": "confrontations",
+      "name": "Confrontations",
+      "nameBn": "সংঘর্ষ"
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "nameBn": "নেতৃত্ব"
+    },
+    {
+      "id": "silent",
+      "name": "Silent Protests",
+      "nameBn": "নীরব প্রতিবাদ"
+    },
+    {
+      "id": "support",
+      "name": "Support & Aid",
+      "nameBn": "সহায়তা"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Mass Gathering at Shahbagh",
+      "titleBn": "শাহবাগে গণসমাবেশ",
+      "photographer": "Abdul Majid",
+      "photographerBn": "আব্দুল মাজিদ",
+      "description": "Thousands gathered at Shahbagh intersection in the largest demonstration of the movement",
+      "descriptionBn": "আন্দোলনের সবচেয়ে বড় বিক্ষোভে শাহবাগ মোড়ে হাজার হাজার মানুষ জমায়েত হয়েছিল",
+      "location": "Shahbagh, Dhaka",
+      "locationBn": "শাহবাগ, ঢাকা",
+      "date": "August 7, 2024",
+      "dateBn": "আগস্ট ৭, ২০২৪",
+      "image": "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+      "category": "demonstrations"
+    }
+  ]
+}

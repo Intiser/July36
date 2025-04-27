@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('https://cdn.jsdelivr.net/gh/somratcste/somratsprojects@master/fonts/SolaimanLipi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nikosh';
+  src: url('https://fonts.maateen.me/nikosh/font.css');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --color-primary-50: #FFEBEB;
+  --color-primary-100: #FFD7D7;
+  --color-primary-200: #FFAFAF;
+  --color-primary-300: #FF8787;
+  --color-primary-400: #FF5F5F;
+  --color-primary-500: #FF0000;
+  --color-primary-600: #CC0000;
+  --color-primary-700: #990000;
+  --color-primary-800: #660000;
+  --color-primary-900: #330000;
+  
+  --color-neutral-50: #F2F2F2;
+  --color-neutral-100: #E6E6E6;
+  --color-neutral-200: #CCCCCC;
+  --color-neutral-300: #B3B3B3;
+  --color-neutral-400: #999999;
+  --color-neutral-500: #808080;
+  --color-neutral-600: #666666;
+  --color-neutral-700: #4D4D4D;
+  --color-neutral-800: #333333;
+  --color-neutral-900: #1A1A1A;
+  
+  /* Typography */
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Oswald', system-ui, sans-serif;
+  --font-bengali: 'SolaimanLipi', 'Nikosh', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+  --transition-timing: cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  /* Theme Colors - Light */
+  --color-bg-primary: var(--color-neutral-50);
+  --color-bg-secondary: white;
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-border: var(--color-neutral-200);
+  --color-accent: var(--color-primary-500);
+}
+
+/* Dark Theme Variables */
+.dark {
+  --color-bg-primary: var(--color-neutral-900);
+  --color-bg-secondary: var(--color-neutral-800);
+  --color-text-primary: white;
+  --color-text-secondary: var(--color-neutral-300);
+  --color-border: var(--color-neutral-700);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+  }
+  
+  body {
+    @apply font-sans overflow-x-hidden;
+    background-color: var(--color-bg-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold leading-tight;
+    color: var(--color-text-primary);
+  }
+  
+  p {
+    @apply leading-relaxed;
+    color: var(--color-text-secondary);
+  }
+  
+  .bengali {
+    font-family: var(--font-bengali);
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-block px-6 py-3 text-base font-semibold rounded-md;
+    transition: all var(--transition-normal) var(--transition-timing);
+  }
+  
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  .btn-outline {
+    border: 2px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+  }
+  
+  .card {
+    @apply overflow-hidden rounded-lg shadow-md;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+  }
+  
+  .protest-border {
+    border: 2px solid var(--color-text-primary);
+    box-shadow: 4px 4px 0px 0px var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--transition-normal) var(--transition-timing);
+}
+
+.animate-slide-up {
+  animation: slideUp var(--transition-normal) var(--transition-timing);
+}

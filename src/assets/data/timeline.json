@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "July 15, 2024",
+      "dateBn": "জুলাই ১৫, ২০২৪",
+      "title": "Initial Protests Begin",
+      "titleBn": "প্রাথমিক বিক্ষোভ শুরু",
+      "description": "Students at Dhaka University gathered to protest against the controversial quota system in government jobs.",
+      "descriptionBn": "সরকারি চাকরিতে বিতর্কিত কোটা ব্যবস্থার বিরুদ্ধে বিক্ষোভ করতে ঢাকা বিশ্ববিদ্যালয়ের ছাত্ররা জড়ো হয়েছিল।",
+      "image": "https://images.pexels.com/photos/2265488/pexels-photo-2265488.jpeg",
+      "imageAlt": "Initial protests at Dhaka University"
+    }
+  ]
+}

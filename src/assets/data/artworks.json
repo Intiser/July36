@@ -1,0 +1,40 @@
+{
+  "types": {
+    "poster": {
+      "en": "Protest Posters",
+      "bn": "প্রতিবাদী পোস্টার"
+    },
+    "painting": {
+      "en": "Paintings",
+      "bn": "চিত্রকর্ম"
+    },
+    "digital": {
+      "en": "Digital Art",
+      "bn": "ডিজিটাল আর্ট"
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Voice of Freedom",
+      "titleBn": "মুক্তির কণ্ঠস্বর",
+      "artist": "Mahfuza Rahman",
+      "artistBn": "মাহফুজা রহমান",
+      "description": "Bold protest poster created during the early days of the movement",
+      "descriptionBn": "আন্দোলনের প্রাথমিক দিনগুলিতে তৈরি করা বোল্ড প্রতিবাদ পোস্টার",
+      "image": "https://images.pexels.com/photos/5626342/pexels-photo-5626342.jpeg",
+      "type": "poster"
+    },
+    {
+      "id": 2,
+      "title": "Justice Now",
+      "titleBn": "এখনই ন্যায়বিচার",
+      "artist": "Rafiqul Islam",
+      "artistBn": "রফিকুল ইসলাম",
+      "description": "Striking red and black design demanding immediate justice",
+      "descriptionBn": "অবিলম্বে ন্যায়বিচার দাবি করে আকর্ষণীয় লাল এবং কালো ডিজাইন",
+      "image": "https://images.pexels.com/photos/8304855/pexels-photo-8304855.jpeg",
+      "type": "poster"
+    }
+  ]
+}

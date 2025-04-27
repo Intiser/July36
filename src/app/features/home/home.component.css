@@ -1,0 +1,80 @@
+.hero {
+  @apply relative min-h-screen flex items-center;
+}
+
+.hero-background {
+  @apply absolute inset-0 bg-black;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-gradient-to-b from-neutral-900/70 to-neutral-900/90;
+}
+
+.hero-image {
+  @apply w-full h-full object-cover opacity-60;
+}
+
+.hero-content {
+  @apply relative z-10 max-w-3xl;
+}
+
+.section-intro {
+  @apply py-20 bg-white dark:bg-neutral-900;
+}
+
+.section-explore {
+  @apply py-16 bg-neutral-50 dark:bg-neutral-800;
+}
+
+.section-cta {
+  @apply py-20 bg-neutral-900 text-white;
+}
+
+.explore-card {
+  @apply overflow-hidden rounded-lg border-2 border-neutral-900 dark:border-white;
+  @apply shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+  @apply hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-300;
+}
+
+.explore-image {
+  @apply relative h-64 overflow-hidden;
+}
+
+.explore-image img {
+  @apply w-full h-full object-cover transition-transform duration-500;
+}
+
+.explore-image-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-70;
+}
+
+.explore-content {
+  @apply p-6 bg-white dark:bg-neutral-800;
+}
+
+.explore-title {
+  @apply text-white text-2xl font-display font-bold;
+}
+
+.explore-description {
+  @apply text-neutral-700 dark:text-neutral-300 mb-4;
+}
+
+.explore-link {
+  @apply inline-flex items-center font-medium text-primary-600 dark:text-primary-400;
+  @apply hover:text-primary-700 dark:hover:text-primary-300;
+}
+
+.cta-button {
+  @apply inline-flex items-center px-6 py-3 rounded-lg transition-all duration-300;
+  @apply hover:translate-y-[-2px];
+}
+
+.cta-button-primary {
+  @apply bg-primary-500 text-white hover:bg-primary-600;
+}
+
+.cta-button-secondary {
+  @apply bg-transparent border-2 border-white text-white;
+  @apply hover:bg-white hover:text-neutral-900;
+}

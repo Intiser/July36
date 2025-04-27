@@ -1,0 +1,36 @@
+.artworks-header {
+  @apply relative py-16 bg-neutral-900 text-white;
+}
+
+.artworks-grid {
+  @apply py-16 bg-white dark:bg-neutral-900;
+}
+
+.artwork-card {
+  @apply bg-white dark:bg-neutral-800 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg;
+  @apply border-2 border-neutral-900 dark:border-white shadow-[4px_4px_0px_0px_theme(colors.neutral.900)] dark:shadow-[4px_4px_0px_0px_theme(colors.white)];
+}
+
+.artwork-image {
+  @apply relative aspect-video w-full overflow-hidden;
+}
+
+.artwork-image img {
+  @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-105;
+}
+
+.artwork-content {
+  @apply p-6;
+}
+
+.artwork-title {
+  @apply text-xl font-bold mb-2 text-neutral-900 dark:text-white;
+}
+
+.artwork-artist {
+  @apply text-sm text-neutral-600 dark:text-neutral-400 mb-4;
+}
+
+.artwork-description {
+  @apply text-neutral-700 dark:text-neutral-300 line-clamp-3;
+}

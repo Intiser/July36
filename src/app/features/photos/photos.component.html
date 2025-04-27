@@ -1,0 +1,108 @@
+<div class="flex flex-col min-h-screen">
+  <app-header></app-header>
+
+  <main class="flex-grow pt-24">
+    <!-- Photos Header -->
+    <section class="py-16 bg-neutral-900 text-white">
+      <div class="container px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+            <span *ngIf="currentLanguage === 'en'">
+              <span class="text-primary-500">PHOTO</span> GALLERY
+            </span>
+            <span *ngIf="currentLanguage === 'bn'" class="bengali">
+              <span class="text-primary-500">ছবি</span> গ্যালারি
+            </span>
+          </h1>
+          
+          <p class="text-xl text-neutral-300 mb-10">
+            <span *ngIf="currentLanguage === 'en'">
+              Documentary photography capturing key moments of the 2024 Bangladesh protests
+            </span>
+            <span *ngIf="currentLanguage === 'bn'" class="bengali">
+              ২০২৪ বাংলাদেশ আন্দোলনের গুরুত্বপূর্ণ মুহূর্তগুলি ধারণকারী ডকুমেন্টারি ফটোগ্রাফি
+            </span>
+          </p>
+          
+          <div class="flex justify-center">
+            <div class="h-1 w-24 bg-primary-500"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Category Filter -->
+    <section class="py-6 bg-white dark:bg-neutral-800 sticky top-16 z-30">
+      <div class="container px-6 md:px-12">
+        <div class="flex flex-wrap justify-center gap-2">
+          <button *ngFor="let category of categories"
+                  (click)="setCategory(category.id)"
+                  [class.bg-primary-600]="selectedCategory === category.id"
+                  [class.text-white]="selectedCategory === category.id"
+                  [class.bg-white]="selectedCategory !== category.id"
+                  [class.dark:bg-neutral-700]="selectedCategory !== category.id"
+                  [class.text-neutral-800]="selectedCategory !== category.id"
+                  [class.dark:text-white]="selectedCategory !== category.id"
+                  class="px-4 py-2 rounded-full text-sm md:text-base font-medium transition-all duration-300 hover:shadow-md">
+            <span *ngIf="currentLanguage === 'en'">{{ category.name }}</span>
+            <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ category.nameBn }}</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Photos Grid -->
+    <section class="py-16 bg-white dark:bg-neutral-900">
+      <div class="container px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div *ngFor="let photo of filteredPhotos" class="group cursor-pointer">
+            <div class="overflow-hidden rounded-lg protest-border">
+              <div class="h-64 overflow-hidden">
+                <img [src]="photo.image" [alt]="photo.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              
+              <div class="bg-white dark:bg-neutral-800 p-6">
+                <h3 class="text-lg font-bold mb-2 dark:text-white">
+                  <span *ngIf="currentLanguage === 'en'">{{ photo.title }}</span>
+                  <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ photo.titleBn }}</span>
+                </h3>
+                
+                <div class="flex items-center mb-2 text-neutral-600 dark:text-neutral-400 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                  <span *ngIf="currentLanguage === 'en'">{{ photo.photographer }}</span>
+                  <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ photo.photographerBn }}</span>
+                </div>
+                
+                <div class="flex items-center mb-2 text-neutral-600 dark:text-neutral-400 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span *ngIf="currentLanguage === 'en'">{{ photo.location }}</span>
+                  <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ photo.locationBn }}</span>
+                </div>
+                
+                <div class="flex items-center mb-4 text-neutral-600 dark:text-neutral-400 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span *ngIf="currentLanguage === 'en'">{{ photo.date }}</span>
+                  <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ photo.dateBn }}</span>
+                </div>
+                
+                <p class="text-neutral-700 dark:text-neutral-300 text-sm">
+                  <span *ngIf="currentLanguage === 'en'">{{ photo.description }}</span>
+                  <span *ngIf="currentLanguage === 'bn'" class="bengali">{{ photo.descriptionBn }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</div>

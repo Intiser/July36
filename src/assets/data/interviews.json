@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "subject": "Dr. Aisha Rahman",
+      "subjectBn": "ড. আয়েশা রহমান",
+      "role": "Student Rights Activist",
+      "roleBn": "ছাত্র অধিকার কর্মী",
+      "interviewer": "Kamal Ahmed",
+      "interviewerBn": "কামাল আহমেদ",
+      "date": "August 12, 2024",
+      "dateBn": "আগস্ট ১২, ২০২৪",
+      "excerpt": "\"The movement wasn't just about quotas - it was about fundamental reform in how we approach education and employment in Bangladesh.\"",
+      "excerptBn": "\"আন্দোলন শুধু কোটা নিয়ে ছিল না - এটি ছিল বাংলাদেশে আমরা কিভাবে শিক্ষা এবং কর্মসংস্থানের দিকে এগিয়ে যাব তার মৌলিক সংস্কার নিয়ে।\"",
+      "image": "https://images.pexels.com/photos/5905902/pexels-photo-5905902.jpeg"
+    },
+    {
+      "id": 2,
+      "subject": "Mohammad Hasan",
+      "subjectBn": "মোহাম্মদ হাসান",
+      "role": "Student Leader",
+      "roleBn": "ছাত্র নেতা",
+      "interviewer": "Sabina Khan",
+      "interviewerBn": "সাবিনা খান",
+      "date": "August 8, 2024",
+      "dateBn": "আগস্ট ৮, ২০২৪",
+      "excerpt": "\"We organized through social media even when the internet was restricted. The students showed incredible resilience and creativity.\"",
+      "excerptBn": "\"ইন্টারনেট সীমিত থাকা সত্ত্বেও আমরা সোশ্যাল মিডিয়ার মাধ্যমে সংগঠিত হয়েছি। ছাত্ররা অবিশ্বাস্য সহনশীলতা এবং সৃজনশীলতা দেখিয়েছে।\"",
+      "image": "https://images.pexels.com/photos/8422403/pexels-photo-8422403.jpeg"
+    },
+    {
+      "id": 3,
+      "subject": "Fatima Begum",
+      "subjectBn": "ফাতিমা বেগম",
+      "role": "Medical Volunteer",
+      "roleBn": "মেডিকেল স্বেচ্ছাসেবক",
+      "interviewer": "Rahim Ali",
+      "interviewerBn": "রহিম আলী",
+      "date": "July 30, 2024",
+      "dateBn": "জুলাই ৩০, ২০২৪",
+      "excerpt": "\"As medical students, we felt it was our duty to help. We set up first aid stations and treated hundreds of protesters.\"",
+      "excerptBn": "\"মেডিকেল ছাত্র হিসেবে আমরা অনুভব করেছি এটা আমাদের দায়িত্ব। আমরা প্রাথমিক চিকিৎসা কেন্দ্র স্থাপন করেছি এবং শত শত বিক্ষোভকারীদের চিকিৎসা দিয়েছি।\"",
+      "image": "https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "APP": {
+    "TITLE": "Strike 2024 Museum",
+    "SUBTITLE": "Preserving the art, voices, and memory of the July-August 2024 Bangladesh student protests"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "ARTWORKS": "Artworks",
+    "PHOTOS": "Photos",
+    "VIDEOS": "Videos",
+    "WRITINGS": "Writings",
+    "INTERVIEWS": "Interviews",
+    "TIMELINE": "Timeline",
+    "PEOPLE": "People"
+  },
+  "HOME": {
+    "HERO_TITLE": "STRIKE 2024 MUSEUM",
+    "HERO_SUBTITLE": "Preserving the art, voices, and memory of the July-August 2024 Bangladesh student protests.",
+    "ENTER_MUSEUM": "ENTER MUSEUM",
+    "DOCUMENTING_TITLE": "DOCUMENTING A HISTORIC MOVEMENT",
+    "DOCUMENTING_TEXT": "The July-August 2024 Bangladesh strikes marked a turning point in the nation's history. This digital museum preserves the artistic expressions, personal testimonies, and documentary evidence of this powerful student-led movement.",
+    "EXPLORE_MUSEUM": "EXPLORE THE MUSEUM",
+    "EXPLORE": "Explore",
+    "WITNESS_HISTORY": "WITNESS HISTORY",
+    "WITNESS_TEXT": "Explore the complete timeline of events, hear from those who were there, and see the art that emerged from this pivotal moment in Bangladesh's history.",
+    "EXPLORE_TIMELINE": "EXPLORE TIMELINE",
+    "KEY_FIGURES": "KEY FIGURES"
+  },
+  "FOOTER": {
+    "MISSION": "Preserving the history and art of the July-August 2024 Bangladesh student protests.",
+    "QUICK_LINKS": "Quick Links",
+    "TIMELINE": "Timeline",
+    "KEY_FIGURES": "Key Figures",
+    "PHOTO_GALLERY": "Photo Gallery",
+    "ABOUT_PROJECT": "About This Project",
+    "ABOUT_TEXT": "This digital museum is dedicated to preserving the memory and documentation of the 2024 Bangladesh student protests.",
+    "COPYRIGHT": "© 2024 Strike 2024 Museum. All rights reserved."
+  }
+}

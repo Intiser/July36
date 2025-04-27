@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "First Day of Protests",
+      "titleBn": "আন্দোলনের প্রথম দিন",
+      "description": "Documentary footage from the initial protests at Dhaka University",
+      "descriptionBn": "ঢাকা বিশ্ববিদ্যালয়ে প্রাথমিক বিক্ষোভের ডকুমেন্টারি ফুটেজ",
+      "date": "July 15, 2024",
+      "dateBn": "জুলাই ১৫, ২০২৪",
+      "thumbnail": "https://images.pexels.com/photos/2265488/pexels-photo-2265488.jpeg",
+      "videoUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "Student Leaders' Speech",
+      "titleBn": "ছাত্র নেতাদের ভাষণ",
+      "description": "Key speeches from student leaders at the height of the movement",
+      "descriptionBn": "আন্দোলনের চূড়ান্ত সময়ে ছাত্র নেতাদের গুরুত্বপূর্ণ ভাষণ",
+      "date": "July 25, 2024",
+      "dateBn": "জুলাই ২৫, ২০২৪",
+      "thumbnail": "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg",
+      "videoUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "Mass Protests",
+      "titleBn": "গণবিক্ষোভ",
+      "description": "Aerial footage of the largest demonstrations in Dhaka",
+      "descriptionBn": "ঢাকায় সবচেয়ে বড় বিক্ষোভের এরিয়াল ফুটেজ",
+      "date": "August 10, 2024",
+      "dateBn": "আগস্ট ১০, ২০২৪",
+      "thumbnail": "https://images.pexels.com/photos/2559749/pexels-photo-2559749.jpeg",
+      "videoUrl": "#"
+    }
+  ]
+}
